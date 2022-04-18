@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./weatherCard.css";
 
-const WeatherCard = () => {
+const WeatherCard = (props) => {
 //   const [query, setQuery] = useState("");
 //   const [weather, setWeather] = useState({});
+console.log("Props:",props);
   return (
     <div className="main-container">
    
@@ -13,20 +14,20 @@ const WeatherCard = () => {
        
 
           <h2 className="city-name">
-            <span>"weather-name"</span>
+            <span>{props.city}</span>
             <sup>"us"</sup>
           </h2>
           <div className="city-temp">
-            {Math.round(10.5)}
+            {Math.round(props.temp)}
             <sup>&deg;C</sup>
           </div>
           <div className="info">
             <img
               className="city-icon"
-              src="client/src/asset/cloud.jpeg"
+              src={props.weather_imgurl}
               alt="weather description"
             />
-            <p>"weather desc"</p>
+            <p>{props.weather_desc}</p>
           </div>
         </div>
       

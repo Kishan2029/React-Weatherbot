@@ -1,0 +1,133 @@
+{
+	"fulfillmentMessages": [{
+		"platform": "PLATFORM_UNSPECIFIED",
+		"text": {
+			"text": ["first response"]
+		},
+		"message": "text"
+	}, {
+		"platform": "PLATFORM_UNSPECIFIED",
+		"text": {
+			"text": ["second response"]
+		},
+		"message": "text"
+	}, {
+		"platform": "PLATFORM_UNSPECIFIED",
+		"payload": {
+			"fields": {
+				"richContent": {
+					"listValue": {
+						"values": [{
+							"listValue": {
+								"values": [{
+									"structValue": {
+										"fields": {
+											"options": {
+												"listValue": {
+													"values": [{
+														"structValue": {
+															"fields": {
+																"text": {
+																	"stringValue": "Mumbai",
+																	"kind": "stringValue"
+																}
+															}
+														},
+														"kind": "structValue"
+													}, {
+														"structValue": {
+															"fields": {
+																"text": {
+																	"stringValue": "Las Vegas",
+																	"kind": "stringValue"
+																}
+															}
+														},
+														"kind": "structValue"
+													}, {
+														"structValue": {
+															"fields": {
+																"text": {
+																	"stringValue": "Delhi",
+																	"kind": "stringValue"
+																}
+															}
+														},
+														"kind": "structValue"
+													}]
+												},
+												"kind": "listValue"
+											},
+											"type": {
+												"stringValue": "chips",
+												"kind": "stringValue"
+											}
+										}
+									},
+									"kind": "structValue"
+								}]
+							},
+							"kind": "listValue"
+						}]
+					},
+					"kind": "listValue"
+				}
+			}
+		},
+		"message": "payload"
+	}],
+	"outputContexts": [],
+	"queryText": "whats the weather",
+	"speechRecognitionConfidence": 0,
+	"action": "",
+	"parameters": {
+		"fields": {
+			"date": {
+				"stringValue": "",
+				"kind": "stringValue"
+			},
+			"city": {
+				"stringValue": "",
+				"kind": "stringValue"
+			}
+		}
+	},
+	"allRequiredParamsPresent": true,
+	"fulfillmentText": "second response",
+	"webhookSource": "",
+	"webhookPayload": null,
+	"intent": {
+		"inputContextNames": [],
+		"events": [],
+		"trainingPhrases": [],
+		"outputContexts": [],
+		"parameters": [],
+		"messages": [],
+		"defaultResponsePlatforms": [],
+		"followupIntentInfo": [],
+		"name": "projects/weatherbot-9jek/agent/intents/537862d7-d29b-4b9f-a009-70d3f54cabf9",
+		"displayName": "GetWeather",
+		"priority": 0,
+		"isFallback": false,
+		"webhookState": "WEBHOOK_STATE_UNSPECIFIED",
+		"action": "",
+		"resetContexts": false,
+		"rootFollowupIntentName": "",
+		"parentFollowupIntentName": "",
+		"mlDisabled": false,
+		"liveAgentHandoff": false,
+		"endInteraction": false
+	},
+	"intentDetectionConfidence": 0.8783742189407349,
+	"diagnosticInfo": {
+		"fields": {
+			"webhook_latency_ms": {
+				"numberValue": 564,
+				"kind": "numberValue"
+			}
+		}
+	},
+	"languageCode": "en",
+	"sentimentAnalysisResult": null,
+	"cancelsSlotFilling": false
+}

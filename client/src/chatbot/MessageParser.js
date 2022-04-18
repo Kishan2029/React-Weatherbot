@@ -6,18 +6,18 @@ class MessageParser {
   }
 
   parse(message) {
-    console.log("User Message", message);
+    console.log("User Message:", message);
     const lowercase = message.toLowerCase();
     
     // if (lowercase.includes("quiz")) {
     //   this.actionProvider.quiz();
     // }
-    // if (lowercase.includes("video")) {
-    //   this.actionProvider.video();
-    // }
-    // if (lowercase.includes("weather")) {
-    //   this.actionProvider.weather();
-    // }
+    if (lowercase.includes("video")) {
+      this.actionProvider.video();
+    }
+    if (lowercase.includes("weather")) {
+      this.actionProvider.weather();
+    }
       const data = {
         "languageCode":"en",
         "queryText":message,
@@ -36,7 +36,28 @@ class MessageParser {
             // }
             // else
             this.actionProvider.botMessage(response.data.fulfillmentText);
-            console.log("Fulfillment message:",response.data.fulfillmentMessages);
+            console.log("Fulfillment text:",response);
+            // console.log("Fulfillment message:",response.data.fulfillmentMessages);
+            const fulfillmentMessages = response.data.fulfillmentMessages;
+
+            // fulfillmentMessages.map(messsage =>{
+            //   var text = message.text;
+            //   var payload = message.payload;
+            //   if(text)
+            //   {
+            //     this.actionProvider.botMessage(text.text[0]);
+            //   }
+            //   if(payload)
+            //   {
+            //     var richContent = payload.richContent[0];
+            //     if(richContent.types=="chips")
+            //     {
+            //       options = richContent.options;
+            //       this.actionProvider
+            //     }
+            //   }
+
+            // })
      
         }).catch((error) => {
           console.log(error)
